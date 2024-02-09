@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/vaporwave.gif);
+    background-size: cover; /* ทำให้ภาพครอบคลุมพื้นที่ทั้งหมด */
+    background-position: center; /* จัดภาพให้อยู่ตรงกลาง */
+    background-attachment: fixed; /* ทำให้ภาพนิ่งเมื่อเลื่อนหน้าจอ */
+}
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.form-box {
+    width: 400px;
+    height: 450px;
+    background: rgba(0,0,0, 0.5); /* สามารถเปลี่ยนสีพื้นหลังของกล่องฟอร์ม */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px; /* ปรับมุมให้กลม */
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่างของหัวข้อ */
+}
+
+.inputbox {
+    position: relative;
+    width: 100%; /* ให้กล่อง input มีความกว้างเต็มที่ภายใน .form-box */
+    margin-bottom: 20px; /* เพิ่มระยะห่างระหว่างกล่อง input */
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px; /* ปรับมุมให้กลม */
+    background: transparent;
+    border: 2px solid #fff; /* กำหนดขอบสีขาว */
+    color: #fff;
+    font-size: 1em;
+}
+
+.inputbox label {
+    position: absolute;
+    top: -14px;
+    left: 10px;
+    background: red; /* ให้ label มีพื้นหลังเดียวกับกล่องฟอร์ม */
+    padding: 0 5px;
+    font-size: 0.8em;
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px; /* ปรับมุมให้กลม */
+    background: #fff;
+    color: red; /* สามารถปรับสีของข้อความในปุ่ม */
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 20px; /* เพิ่มระยะห่างด้านบนของปุ่ม */
+    cursor: pointer; /* เพิ่ม cursor เมื่อชี้เมาส์อยู่บนปุ่ม */
+}
+
+.register, .forget {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.register a, .forget a {
+    color: #fff;
+    text-decoration: underline; /* ให้ลิงค์มีเส้นใต้ */
+}
+
+.register a:hover, .forget a:hover {
+    text-decoration: none; /* ยกเลิกเส้นใต้เมื่อชี้เมาส์อยู่บนลิงค์ */
+}
+
