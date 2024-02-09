@@ -1,0 +1,50 @@
+body {
+    font-family: 'Courier New', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+#gameArea {
+    width: 80%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+.enemy {
+    position: absolute;
+    text-align: center;
+}
+.enemyWord {
+    display: block;
+}
+.enemyChar {
+    font-size: 20px;
+    color: #f00;
+}
+#playerCharacter {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #0f0;
+}
+#typingArea {
+    background-color: #e2e2e2;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+}
+#typedWord {
+    color: #d63031;
+    font-weight: bold;
+}
